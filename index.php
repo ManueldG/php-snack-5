@@ -29,6 +29,9 @@ $array = explode(".",$paragrafo);
 
 var_dump($array);
 
+$array2 = str_replace(".","</p>\n<p>",$paragrafo);
+echo("replace<p>$array2</p>");
+
 foreach($array as $par)
     echo("<p>$par</p>\n");
 ?>
